@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.67">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="/favicon.ico"><title>你好， VuePress ！</title><meta name="description" content="这是我的第一个 VuePress 站点">
+    <link rel="preload" href="/vuepress-starter/assets/style-9631a17f.css" as="style"><link rel="stylesheet" href="/vuepress-starter/assets/style-9631a17f.css">
+    <link rel="modulepreload" href="/vuepress-starter/assets/app-5311756c.js"><link rel="modulepreload" href="/vuepress-starter/assets/备忘录模式.html-24303b17.js"><link rel="modulepreload" href="/vuepress-starter/assets/备忘录模式.html-311ee487.js"><link rel="prefetch" href="/vuepress-starter/assets/index.html-8c8b095d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Docker-compose命令大全.html-93eb499d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Docker常用命令大全.html-f3e287e3.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Docker镜像构建.html-190760e6.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-01-Kubernetes系统原理.html-17f29b89.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-03-Kubeadm搭建集群.html-a0f434da.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-04-Kubectl核心使用.html-676db426.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-05-Dashboard安装和使用.html-765a0fda.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-06-Pod原理和详解.html-6f6679fe.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-07-工作负载详情.html-64c069bc.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-08-服务介绍.html-ccd6b91c.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-09-Ingress.html-390ccaf5.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-10-Storage.html-6e04cf17.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-11-集群配置默认存储类.html-b26ea5f4.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-12-Configmap和Secret.html-90e577e4.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-13-HorizontalPodAutoscaler.html-8899a225.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-14-创建并部署WordPress.html-104e8204.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-15-部署中间件.html-47c1520e.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-16-Devops.html-2248dbdf.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-17-Istio基本介绍.html-adf5b5c0.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/JVM内存模型.html-77ac90db.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/JVM对象创建和内存分配.html-4da68e3a.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/JVM类加载机制.html-d5eacc9b.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/垃圾收集器G1和ZGC.html-6331579d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/垃圾收集器ParNew和CMS.html-270444fe.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/AQS工具类.html-6b3661d7.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Atomic和Unsafe.html-4dd7a57a.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/CPU缓存一致性协议MESI.html-9379830a.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Collections.html-69104bc4.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Executor线程池.html-039ea241.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Future_ForkJoin.html-745d16f9.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Java内存模型.html-c8982bd3.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Synchronized.html-fa7d8525.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/抽象队列同步器AQS.html-12ba708d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/操作系统底层的整体认识.html-83acc100.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/字典树.html-04a94bd9.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/常用10种算法.html-0806d44b.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/排序算法.html-b6029df6.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Java设计模式.html-bb999108.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/单例模式.html-41af5432.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/原型模式.html-85924bb4.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/工厂模式.html-f8f2af4d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/建造者模式.html-52a8f4f1.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/抽象工厂模式.html-dec300b9.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/享元模式.html-206ed1a6.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/代理模式.html-de4b3d0c.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/外观模式.html-6972660d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/桥接模式.html-11a9aa7d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/组合模式.html-1b6aa0b7.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/装饰器模式.html-b76836d2.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/适配器模式.html-ecd31fde.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/中介者模式.html-9f76e037.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/命令模式.html-af7b1b81.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/模板模式.html-f976ba34.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/状态模式.html-9ccea35e.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/策略模式.html-17712aeb.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/观察者模式.html-d2c93580.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/解释器模式.html-db99cbe8.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/访问者模式.html-b20f0e7c.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/责任链模式.html-8b782106.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/迭代器模式.html-16faa828.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/404.html-f9875e7b.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/index.html-446cfcbe.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Docker-compose命令大全.html-7f15854c.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Docker常用命令大全.html-ba3899e9.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Docker镜像构建.html-4ef43e7e.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-01-Kubernetes系统原理.html-f5dffef0.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-03-Kubeadm搭建集群.html-0fc5ccc0.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-04-Kubectl核心使用.html-9ffbdff2.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-05-Dashboard安装和使用.html-dbbbcd47.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-06-Pod原理和详解.html-d09710cd.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-07-工作负载详情.html-e189a902.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-08-服务介绍.html-d3e1ca7f.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-09-Ingress.html-d958881b.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-10-Storage.html-ce83aedf.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-11-集群配置默认存储类.html-84c4b421.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-12-Configmap和Secret.html-c7803c8f.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-13-HorizontalPodAutoscaler.html-14d5b13d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-14-创建并部署WordPress.html-74b85534.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-15-部署中间件.html-0d18fe19.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-16-Devops.html-66364560.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-17-Istio基本介绍.html-e8dcbd98.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/JVM内存模型.html-5719b14d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/JVM对象创建和内存分配.html-d12a9572.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/JVM类加载机制.html-0ea75391.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/垃圾收集器G1和ZGC.html-fd1a852d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/垃圾收集器ParNew和CMS.html-e09d2043.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/AQS工具类.html-6604897b.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Atomic和Unsafe.html-8f7c80c0.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/CPU缓存一致性协议MESI.html-1f36ef9f.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Collections.html-7119c6bf.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Executor线程池.html-0cfb2356.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Future_ForkJoin.html-ec6f3cb7.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Java内存模型.html-9a930eb8.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Synchronized.html-67b54431.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/抽象队列同步器AQS.html-c6141390.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/操作系统底层的整体认识.html-8fab8f48.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/字典树.html-6e86ac30.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/常用10种算法.html-186df0fc.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/排序算法.html-30f83d21.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Java设计模式.html-c69a324f.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/单例模式.html-43acdab2.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/原型模式.html-258d554d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/工厂模式.html-8e6d6c4c.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/建造者模式.html-5039d4ea.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/抽象工厂模式.html-cea6dc1a.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/享元模式.html-bf6a6791.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/代理模式.html-5534ce69.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/外观模式.html-538004ea.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/桥接模式.html-b24264a5.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/组合模式.html-f8fe927c.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/装饰器模式.html-dfac1654.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/适配器模式.html-727ed06e.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/中介者模式.html-96329ebc.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/命令模式.html-c5e32d01.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/模板模式.html-37e594c7.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/状态模式.html-f05bdd41.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/策略模式.html-1a96921d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/观察者模式.html-826f6bbb.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/解释器模式.html-7178ec41.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/访问者模式.html-db1e6255.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/责任链模式.html-b6ef71f5.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/迭代器模式.html-6f901909.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/404.html-8e17302d.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container no-sidebar"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/vuepress-starter/" class=""><!----><span class="site-name">你好， VuePress ！</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="Java"><span class="title">Java</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="Java"><span class="title">Java</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/vuepress-starter/java/jvm/JVM内存模型.md" class="" aria-label="Jvm"><!--[--><!--]--> Jvm <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/vuepress-starter/java/数据结构与算法/字典树.md" class="" aria-label="数据结构与算法"><!--[--><!--]--> 数据结构与算法 <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="Devops"><span class="title">Devops</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="Devops"><span class="title">Devops</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/vuepress-starter/devops/*" class="" aria-label="kubernetes"><!--[--><!--]--> kubernetes <!--[--><!--]--></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><button class="toggle-color-mode-button" title="toggle color mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="Java"><span class="title">Java</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="Java"><span class="title">Java</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/vuepress-starter/java/jvm/JVM内存模型.md" class="" aria-label="Jvm"><!--[--><!--]--> Jvm <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/vuepress-starter/java/数据结构与算法/字典树.md" class="" aria-label="数据结构与算法"><!--[--><!--]--> 数据结构与算法 <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="Devops"><span class="title">Devops</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="Devops"><span class="title">Devops</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/vuepress-starter/devops/*" class="" aria-label="kubernetes"><!--[--><!--]--> kubernetes <!--[--><!--]--></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><!----><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><p>​ 在开发过程中，经常需要保存对象的中间状态，当需要的时候，可以恢复到这个状态。比如，在编程时假如编写失误，例如不小心误删除了几行代码，我们希望返回删除前的状态，便可以使用 Ctrl+Z 来进行返回，这时我们便可以使用备忘录模式来实现。</p><h3 id="一、什么是备忘录模式" tabindex="-1"><a class="header-anchor" href="#一、什么是备忘录模式" aria-hidden="true">#</a> 一、什么是备忘录模式：</h3><p>​ 备忘录模式提供了一种恢复状态的机制，在不破坏封装的前提下，捕获对象的内部状态，并保存在该对象之外，保证该对象能够恢复到某个历史状态；备忘录模式将保存的细节封装在备忘录中，除了创建它的创建者之外其他对象都不能访问它，并且实现了即使要改变保存的细节也不影响客户端。但是备忘录模式都是多状态和多备份的，会早用较多的内存，消耗资源。</p><h3 id="二、结构图" tabindex="-1"><a class="header-anchor" href="#二、结构图" aria-hidden="true">#</a> 二、结构图：</h3><blockquote><ul><li>Originator：原发器，负责创建一个备忘录，用于记录当前对象的内部状态，也可以使用它来利用备忘录恢复内部状态，同时原发器还可以根据需要决定 Memento 存储 Originator 的哪些内部状态。</li><li>Memento：备忘录，用于存储 Originator 的内部状态，并且可以防止 Originator 以外的对象访问Memento。在备忘录 Memento 中有两个接口，其中 Caretaker 只能看到备忘录中的窄接口，它只能将备忘录传递给其他对象。Originator可以看到宽接口，允许它访问返回到先前状态的所有数据。</li><li>Caretaker: 负责人，对备忘录 Memento 进行管理，保存和提供备忘录，但不能对备忘录的内容进行操作和访问，只能够将备忘录传递给其他对象。</li></ul></blockquote><p>备忘录模式的核心就是备忘录 Memento，在备忘录中存储的就是原发器 Originator 的部分或者所有的状态信息，而这些状态信息是不能够被其他对象所访问的，也就是说我们是不能使用备忘录之外的对象来存储这些状态信息，如果暴漏了内部状态信息就违反了封装的原则，故备忘录除了原发器外其他对象都不可以访问。所以为了实现备忘录模式的封装，我们需要对备忘录的访问做些控制：</p><p>（1）对原发器：可以访问备忘录里的所有信息。</p><p>（2）对负责人：不可以访问备忘录里面的数据，但是他可以保存备忘录并且可以将备忘录传递给其他对象。</p><p>（3）其他对象：不可访问也不可以保存，它只负责接收从负责人那里传递过来的备忘录同时恢复原发器的状态。</p><p>所以备忘录模式最理想的情况就是只允许生成该备忘录的那个原发器访问备忘录的内部状态，典型的备忘录代码如下：</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>class Memento {
+    private String state;
+    public Memento(Originator o){
+    　　state = o.state;
+    }
+    public void setState(String state){
+       this.state=state;
+    }
+    public String getState(){
+       return this.state;
+    }　　
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="三、代码实现" tabindex="-1"><a class="header-anchor" href="#三、代码实现" aria-hidden="true">#</a> 三、代码实现：</h3><p>​ 我们以游戏挑战BOSS为实现场景：在挑战BOSS之前，角色的血量、蓝量都是满值，然后存档，在大战BOSS时，由于操作失误导致血量和蓝量大量损耗，所以只好恢复到刚刚开始的存档点，继续进行大战BOSS了。</p><p>首先是游戏角色类：Role.java</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>public class Role{    
+    private int bloodFlow;
+    private int magicPoint;
+    
+    public Role(int bloodFlow,int magicPoint){
+        this.bloodFlow = bloodFlow;
+        this.magicPoint = magicPoint;
+    }
+ 
+    public int getBloodFlow() {
+        return bloodFlow;
+    }
+ 
+    public void setBloodFlow(int bloodFlow) {
+        this.bloodFlow = bloodFlow;
+    }
+ 
+    public int getMagicPoint() {
+        return magicPoint;
+    }
+ 
+    public void setMagicPoint(int magicPoint) {
+        this.magicPoint = magicPoint;
+    }
+    
+    /**
+     * @desc 展示角色当前状态
+     */
+    public void display(){
+        System.out.println(&quot;用户当前状态:&quot;);
+        System.out.println(&quot;血量:&quot; + getBloodFlow() + &quot;;蓝量:&quot; + getMagicPoint());
+    }
+    
+    /**
+     * @desc 保持存档、当前状态
+     */
+    public Memento saveMemento(){
+        return new Memento(getBloodFlow(), getMagicPoint());
+    }
+    
+    /**
+     * @desc 恢复存档
+     */
+    public void restoreMemento(Memento memento){
+        this.bloodFlow = memento.getBloodFlow();
+        this.magicPoint = memento.getMagicPoint();
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>备忘录：Memento.java</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>class Memento {
+    private int bloodFlow;
+    private int magicPoint;
+ 
+    public int getBloodFlow() {
+        return bloodFlow;
+    }
+ 
+    public void setBloodFlow(int bloodFlow) {
+        this.bloodFlow = bloodFlow;
+    }
+ 
+    public int getMagicPoint() {
+        return magicPoint;
+    }
+ 
+    public void setMagicPoint(int magicPoint) {
+        this.magicPoint = magicPoint;
+    }
+    
+    public Memento(int bloodFlow,int magicPoint){
+        this.bloodFlow = bloodFlow;
+        this.magicPoint = magicPoint;
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>负责人：Caretaker.java</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>public class Caretaker {
+    Memento memento;
+ 
+    public Memento getMemento() {
+        return memento;
+    }
+ 
+    public void setMemento(Memento memento) {
+        this.memento = memento;
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>客户端：Client.java</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>public class Client {
+    public static void main(String[] args) {
+        //打BOSS之前：血、蓝全部满值
+        Role role = new Role(100, 100);
+        System.out.println(&quot;----------大战BOSS之前----------&quot;);
+        role.display();
+        
+        //保持进度
+        Caretaker caretaker = new Caretaker();
+        caretaker.memento = role.saveMemento();
+        
+        //大战BOSS，快come Over了
+        role.setBloodFlow(20);
+        role.setMagicPoint(20);
+        System.out.println(&quot;----------大战BOSS----------&quot;);
+        role.display();
+        
+        //恢复存档
+        role.restoreMemento(caretaker.getMemento());
+        System.out.println(&quot;----------恢复----------&quot;);
+        role.display();
+        
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="四、备忘录模式小结" tabindex="-1"><a class="header-anchor" href="#四、备忘录模式小结" aria-hidden="true">#</a> 四、备忘录模式小结：</h3><p>1、优点：</p><p>（1）实现了信息的封装，用户不需要关心状态的保存细节，窄接口保证了只有发起者才能访问备忘录对象的状态；</p><p>（2）简化了原发器，把备忘录对象保存到原发器对象之外，这样原发器角色就不需要对各个备份的状态进行管理。</p><p>2、缺点：</p><p>​ 在实际应用中，备忘录模式都是多状态和多备份的，每保存一次对象状态都需要消耗一定的系统资源，如果需要保存的原发器类的成员变量太多，就不可避免需要占用大量的内存存储空间，消耗资源。</p><p>3、适用场景：</p><p>（1）如果有需要提供回滚操作的需求，使用备忘录模式非常适合，比如jdbc的事务操作，文本编辑器的Ctrl+Z恢复等。</p><p>（2）保存一个对象在某一个时刻的全部状态或部分状态，这样以后需要时它能够恢复到先前的状态，实现撤销操作。防止外界对象破坏一个对象历史状态的封装性。</p></div><!--[--><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: huangxiangquan@yintatech.com">huangxiangquan</span><!----><!--]--><!--]--></span></div></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/vuepress-starter/assets/app-5311756c.js" defer></script>
+  </body>
+</html>
