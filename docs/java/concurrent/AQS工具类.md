@@ -1,4 +1,6 @@
-# BlockingQueue
+# AQS工具类
+
+## BlockingQueue
 
 ### 概要
 BlockingQueue，是java.util.concurrent 包提供的用于解决并发生产者 - 消费者问题 的最有用的类，它的特性是在任意时刻只有一个线程可以进行take或者put操作，并且 BlockingQueue提供了超时return null的机制，在许多生产场景里都可以看到这个工具的 身影。

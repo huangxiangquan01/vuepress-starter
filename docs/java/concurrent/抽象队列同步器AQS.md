@@ -1,4 +1,5 @@
-# AQS
+# 抽象队列同步器AQS
+## AQS
 Java并发编程核心在于java.concurrent.util包而juc当中的大多数同步器实现都是围绕 着共同的基础行为，比如等待队列、条件队列、独占获取、共享获取等，而这个行为的抽象 就是基于AbstractQueuedSynchronizer简称AQS，AQS定义了一套多线程访问共享资源 的同步器框架，是一个依赖状态(state)的同步器。
 
 ### ReentrantLock

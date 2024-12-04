@@ -1,4 +1,5 @@
-# HashMap
+# 集合
+## HashMap
 ### 数据结构
 > 数组+链表+(红黑树jdk>=8)
 
@@ -98,4 +99,3 @@ ConcurrentHashMap由三部分构成, table + 链表 + 红黑树, 其中table是�
    1. 写的时候不能并发写，需要对写操作进行加锁； 
     
 
- 
