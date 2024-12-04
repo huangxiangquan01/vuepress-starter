@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-fbdb92ac","path":"/java/arithmetic/%E5%B8%B8%E7%94%A810%E7%A7%8D%E7%AE%97%E6%B3%95.html","title":"常用10种算法","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1733294113000,"contributors":[{"name":"huangxiangquan","email":"huangxiangquan@163.com","commits":1}]},"filePathRelative":"java/arithmetic/常用10种算法.md"}');export{a as data};

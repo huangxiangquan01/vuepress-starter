@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.67">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="/favicon.ico"><title>你好， VuePress ！</title><meta name="description" content="这是我的第一个 VuePress 站点">
+    <link rel="preload" href="/vuepress-starter/assets/style-9631a17f.css" as="style"><link rel="stylesheet" href="/vuepress-starter/assets/style-9631a17f.css">
+    <link rel="modulepreload" href="/vuepress-starter/assets/app-ec3e5753.js"><link rel="modulepreload" href="/vuepress-starter/assets/访问者模式.html-0b972e38.js"><link rel="modulepreload" href="/vuepress-starter/assets/访问者模式.html-fe93976a.js"><link rel="prefetch" href="/vuepress-starter/assets/index.html-8c8b095d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Docker-compose命令大全.html-93eb499d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Docker常用命令大全.html-f3e287e3.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Docker镜像构建.html-7d7e4c30.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-01-Kubernetes系统原理.html-9dccf374.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-03-Kubeadm搭建集群.html-a0f434da.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-04-Kubectl核心使用.html-b7221f79.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-05-Dashboard安装和使用.html-b4ef007e.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-06-Pod原理和详解.html-af85acb7.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-07-工作负载详情.html-efda3e84.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-08-服务介绍.html-ccd6b91c.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-09-Ingress.html-390ccaf5.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-10-Storage.html-6e04cf17.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-11-集群配置默认存储类.html-b26ea5f4.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-12-Configmap和Secret.html-90e577e4.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-13-HorizontalPodAutoscaler.html-8899a225.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-14-创建并部署WordPress.html-104e8204.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-15-部署中间件.html-47c1520e.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-16-Devops.html-2248dbdf.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-17-Istio基本介绍.html-adf5b5c0.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/字典树.html-e2c6ee6a.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/常用10种算法.html-5b8b9a70.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/排序算法.html-701197dc.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/AQS工具类.html-bca75b08.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Atomic和Unsafe.html-1c37fa28.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/CPU缓存一致性协议MESI.html-f077c1c5.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Collections.html-b8e8c729.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Executor线程池.html-ce612aa5.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Future_ForkJoin.html-fa843369.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Java内存模型.html-1c30a945.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Synchronized.html-ac25c50f.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/抽象队列同步器AQS.html-9d1d4326.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/操作系统底层的整体认识.html-9ac36108.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Java设计模式.html-f824d6c6.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/JVM内存模型.html-77ac90db.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/JVM对象创建和内存分配.html-4da68e3a.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/JVM类加载机制.html-d5eacc9b.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/垃圾收集器G1和ZGC.html-6331579d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/垃圾收集器ParNew和CMS.html-270444fe.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/单例模式.html-df6ba33d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/原型模式.html-29f8fb2a.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/工厂模式.html-baaedb69.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/建造者模式.html-5279a23a.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/抽象工厂模式.html-f4c6c87f.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/享元模式.html-60f9e90b.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/代理模式.html-562b1fa1.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/外观模式.html-34768bb7.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/桥接模式.html-90666e92.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/组合模式.html-6a877140.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/装饰器模式.html-65b81a0d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/适配器模式.html-ff5e5165.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/中介者模式.html-4538eaae.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/命令模式.html-5a77ab4c.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/备忘录模式.html-a312cc9d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/模板模式.html-544bcb03.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/状态模式.html-f1c0ff0d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/策略模式.html-d843f689.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/观察者模式.html-1fe66b5e.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/解释器模式.html-e879d8eb.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/责任链模式.html-0d5bbd20.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/迭代器模式.html-f81f59df.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/404.html-f9875e7b.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/index.html-809b4f6e.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Docker-compose命令大全.html-2ece5324.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Docker常用命令大全.html-286ec7c2.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Docker镜像构建.html-b564b32b.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-01-Kubernetes系统原理.html-dac250b8.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-03-Kubeadm搭建集群.html-c46ab508.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-04-Kubectl核心使用.html-20e6e3b0.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-05-Dashboard安装和使用.html-87ae361e.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-06-Pod原理和详解.html-f79b93a0.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-07-工作负载详情.html-da1597fc.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-08-服务介绍.html-42c62a9f.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-09-Ingress.html-5ca7080f.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-10-Storage.html-711da1dd.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-11-集群配置默认存储类.html-8280e364.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-12-Configmap和Secret.html-67a948e5.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-13-HorizontalPodAutoscaler.html-dd57dc08.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-14-创建并部署WordPress.html-1f986d72.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-15-部署中间件.html-67b69850.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-16-Devops.html-4b722ea7.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-17-Istio基本介绍.html-a570af0b.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/字典树.html-bfc22542.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/常用10种算法.html-05b58eed.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/排序算法.html-4cf5e8ac.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/AQS工具类.html-b6f085e6.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Atomic和Unsafe.html-e254e415.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/CPU缓存一致性协议MESI.html-7b48c164.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Collections.html-6f6dcabe.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Executor线程池.html-61643c86.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Future_ForkJoin.html-2a1dce64.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Java内存模型.html-fe39b5fa.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Synchronized.html-019974ed.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/抽象队列同步器AQS.html-b51f9c73.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/操作系统底层的整体认识.html-569abdc6.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Java设计模式.html-78bcbd5c.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/JVM内存模型.html-a57349e5.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/JVM对象创建和内存分配.html-fb6b451d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/JVM类加载机制.html-755bf027.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/垃圾收集器G1和ZGC.html-5d98affc.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/垃圾收集器ParNew和CMS.html-1605e6da.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/单例模式.html-f32c231c.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/原型模式.html-e577e23f.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/工厂模式.html-56c35483.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/建造者模式.html-0e5ed8bb.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/抽象工厂模式.html-5ee123a7.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/享元模式.html-62653d88.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/代理模式.html-c60746c5.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/外观模式.html-5062412e.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/桥接模式.html-35d848c7.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/组合模式.html-b92ca112.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/装饰器模式.html-679d8ebe.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/适配器模式.html-16110608.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/中介者模式.html-b35c9abf.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/命令模式.html-1497a7bb.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/备忘录模式.html-89c11174.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/模板模式.html-11e4e419.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/状态模式.html-68f43f02.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/策略模式.html-c5912b84.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/观察者模式.html-cdfb37ef.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/解释器模式.html-099c9c5d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/责任链模式.html-11f77191.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/迭代器模式.html-e13e93f9.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/404.html-7ddaaa8d.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/vuepress-starter/" class=""><!----><span class="site-name">你好， VuePress ！</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="Java"><span class="title">Java</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="Java"><span class="title">Java</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/vuepress-starter/java/jvm/JVM内存模型.md" class="" aria-label="Jvm"><!--[--><!--]--> Jvm <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/vuepress-starter/java/arithmetic/字典树.md" class="" aria-label="数据结构与算法"><!--[--><!--]--> 数据结构与算法 <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/vuepress-starter/java/concurrent/操作系统底层的整体认识.md" class="" aria-label="并发编程"><!--[--><!--]--> 并发编程 <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/vuepress-starter/java/design/Java设计模式.md" class="" aria-label="设计模式"><!--[--><!--]--> 设计模式 <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="Devops"><span class="title">Devops</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="Devops"><span class="title">Devops</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/vuepress-starter/devops/docker/Docker常用命令大全.md" class="" aria-label="docker"><!--[--><!--]--> docker <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/vuepress-starter/devops/kubernetes/k8s-01-Kubernetes系统原理.md" class="" aria-label="kubernetes"><!--[--><!--]--> kubernetes <!--[--><!--]--></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><button class="toggle-color-mode-button" title="toggle color mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="Java"><span class="title">Java</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="Java"><span class="title">Java</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/vuepress-starter/java/jvm/JVM内存模型.md" class="" aria-label="Jvm"><!--[--><!--]--> Jvm <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/vuepress-starter/java/arithmetic/字典树.md" class="" aria-label="数据结构与算法"><!--[--><!--]--> 数据结构与算法 <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/vuepress-starter/java/concurrent/操作系统底层的整体认识.md" class="" aria-label="并发编程"><!--[--><!--]--> 并发编程 <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/vuepress-starter/java/design/Java设计模式.md" class="" aria-label="设计模式"><!--[--><!--]--> 设计模式 <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="Devops"><span class="title">Devops</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="Devops"><span class="title">Devops</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/vuepress-starter/devops/docker/Docker常用命令大全.md" class="" aria-label="docker"><!--[--><!--]--> docker <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/vuepress-starter/devops/kubernetes/k8s-01-Kubernetes系统原理.md" class="" aria-label="kubernetes"><!--[--><!--]--> kubernetes <!--[--><!--]--></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p tabindex="0" class="sidebar-item sidebar-heading">设计模式 <!----></p><ul style="" class="sidebar-item-children"><!--[--><li><a href="/vuepress-starter/java/design/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html" class="sidebar-item" aria-label="一、什么是设计模式"><!--[--><!--]--> 一、什么是设计模式 <!--[--><!--]--></a><!----></li><!--]--></ul></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><p><strong>背景：</strong></p><p>​ 去医院看病时，医生会给你一个处方单要你去拿药，拿药我们可以分为两步走：</p><ul><li>（1）去柜台交钱，划价人员会根据处方单上的药进行划价，交钱。</li><li>（2）去药房拿药，药房工作者同样根据处方单给你相对应的药。</li></ul><p>​ 这里我们就划价和拿药两个步骤进行讨论，这里有三个类，处方单（药）、划价人员、药房工作者。同时划价人员和药房工作者都各自有一个动作：划价、拿药。这里进行最初步的设计如下：</p><p>划价人员：</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>public class Charge {
+    public void action(){
+        public void action(){
+            if(&quot;A药&quot;.equals(medicine)){
+                //A的价格
+            }
+            if(&quot;B药&quot;.equals(medicine)){
+                //B的价格
+            }
+            if(&quot;C药&quot;.equals(medicine)){
+                //C的价格
+            }
+            if(&quot;D药&quot;.equals(medicine)){
+                //D的价格
+            }
+            if(&quot;E药&quot;.equals(medicine)){
+                //E的价格
+            }
+            ............
+        }
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>药房工作者：</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>public class WorkerOfPharmacy {
+    public void action(){
+        if(&quot;A药&quot;.equals(medicine)){
+            //给你A药
+        }
+        if(&quot;B药&quot;.equals(medicine)){
+            //给你B药
+        }
+        if(&quot;C药&quot;.equals(medicine)){
+            //给你C药
+        }
+        if(&quot;D药&quot;.equals(medicine)){
+            //给你D药
+        }
+        if(&quot;E药&quot;.equals(medicine)){
+            //给你E药
+        }
+        ............
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>​ 这样的代码写法，在药品种类少的情况没什么问题，但也存在这么多的 if…else，而且我们可以想象医院里的药是那么多，而且随时都会增加的，增加了药就要改变划价人员和药房工作者的代码，这是我们最不希望改变的。那么有没有办法来解决呢？有，<a href="https://so.csdn.net/so/search?q=%E8%AE%BF%E9%97%AE%E8%80%85%E6%A8%A1%E5%BC%8F&amp;spm=1001.2101.3001.7020" target="_blank" rel="noopener noreferrer">访问者模式<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span></a>提供一中比较好的解决方案。</p><p>​ 在实际开发过程中，我们对同个对象可能存在不同的操作方式，如处方单，划价人员要根据它来划价，药房工作者要根据它来给药。而且可能会随时增加新的操作，如医院增加新的药物，但是这里有两个元素是保持不变的，或者说很少变：划价人员和药房工作中，变的只不过是他们的操作。所以我们想如果能够将他们的操作抽象化就好了，这里访问者模式就是一个值得考虑的解决方案了。</p><h3 id="一、什么是访问者模式" tabindex="-1"><a class="header-anchor" href="#一、什么是访问者模式" aria-hidden="true">#</a> 一、什么是访问者模式：</h3><p>​ 访问者模式适用于数据结构相对稳定的系统，将数据结构与基于数据的操作进行分离，使得添加作用于这些数据结构的新操作变得简单，并且不需要改变各数据结构，为不同类型的数据结构提供多种访问操作方式，这样是访问者模式的设计动机。</p><p>​ 除了使新增访问操作变得更加简单，也能够在不修改现有类的层次结构下，定义该类层次结构的操作，并将有关元素对象的访问行为集中到一个访问者对象中，而不是分散搞一个个的元素类中。</p><p>​ 但访问者模式的缺点在于让增加新的元素类变得困难，每增加一个新的元素类都意味着要在抽象访问者角色中增加一个新的抽象操作，并在每一个具体访问者类中增加相应的具体操作，违背了“开闭原则”的要求；</p><p>​ 所以访问者模式适用于对象结构中很少改变，但经常需要在此对象结构上定义新的操作的系统，使得算法操作的增加变得简单；或者需要对一个对象结构中进行很多不同并且不相关的操作，并且需要避免让这些操作污染这些对象，也不希望在增加新操作时修改这些类的场景</p><h3 id="二、结构图" tabindex="-1"><a class="header-anchor" href="#二、结构图" aria-hidden="true">#</a> 二、结构图：</h3><blockquote><ul><li>Vistor：抽象访问者，声明了对 ConcreteElement 类的一些操作</li><li>ConcreteVisitor：具体访问者，实现抽象访问者中声明的每一个操作</li><li>Element：抽象元素，定义一个 accept 操作，用于接收具体访问者</li><li>ConcreteElement：具体元素 ，实现 accept 操作。</li><li>ObjectStructure：对象结构，提供一个高层接口来允许访问者枚举它的元素</li></ul></blockquote><p>​ 从上面的 UML结构图中我们可以看出，访问者模式主要分为两个<a href="https://so.csdn.net/so/search?q=%E5%B1%82%E6%AC%A1&amp;spm=1001.2101.3001.7020" target="_blank" rel="noopener noreferrer">层次<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span></a>结构，一个是访问者层次结构，提供了抽象访问者和具体访问者，主要用于声明一些操作；一个是元素层次结构，提供了抽象元素和具体元素，主要用于声明 accept 操作；而对象结构作为两者的桥梁，存储了不同类型的对象，以便不同的访问者来访问，相同访问者可以以不同的方式访问不同的元素，所以在访问者模式中增加新的访问者无需修改现有代码，可扩展行强。</p><p>​ 在访问者模式使用了双分派技术，所谓双分派技术就是在选择方法的时候，不仅仅要根据消息接收者的运行时区别，还要根据参数的运行时区别。在访问者模式中，客户端将具体状态当做参数传递给具体访问者，这里完成第一次分派，然后具体访问者作为参数的“具体状态”中的方法，同时也将自己this作为参数传递进去，这里就完成了第二次分派。双分派意味着得到的执行操作决定于请求的种类和接受者的类型。</p><h3 id="三、模式的实现" tabindex="-1"><a class="header-anchor" href="#三、模式的实现" aria-hidden="true">#</a> 三、模式的实现：</h3><p>​ 以上面在医院付费、取药为实例。在这个实例中划价员和药房工作者作为访问者，药品作为访问元素、处方单作为对象结构</p><p>抽象访问者：Visitor.<a href="https://so.csdn.net/so/search?q=java&amp;spm=1001.2101.3001.7020" target="_blank" rel="noopener noreferrer">java<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span></a></p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>public abstract class Visitor {
+    protected String name;
+ 
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    public abstract void visitor(MedicineA a);
+    
+    public abstract void visitor(MedicineB b);
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>具体访问者：划价员、Charger.java</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>public class Charger extends Visitor{
+ 
+    public void visitor(MedicineA a) {
+        System.out.println(&quot;划价员：&quot; + name +&quot;给药&quot; + a.getName() +&quot;划价:&quot; + a.getPrice());
+    }
+ 
+    public void visitor(MedicineB b) {
+        System.out.println(&quot;划价员：&quot; + name +&quot;给药&quot; + b.getName() +&quot;划价:&quot; + b.getPrice());
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>具体访问者：药房工作者、WorkerOfPharmacy.java</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>public class WorkerOfPharmacy extends Visitor{
+ 
+    public void visitor(MedicineA a) {
+        System.out.println(&quot;药房工作者：&quot; + name + &quot;拿药 ：&quot; + a.getName());
+    }
+ 
+    public void visitor(MedicineB b) {
+        System.out.println(&quot;药房工作者：&quot; + name + &quot;拿药 ：&quot; + b.getName());
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>抽象元素：Medicine.java</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>public abstract class Medicine {
+    protected String name;
+    protected double price;
+ 
+    public Medicine (String name,double price){
+        this.name = name;
+        this.price = price;
+    }
+    
+    public String getName() {
+        return name;
+    }
+ 
+    public void setName(String name) {
+        this.name = name;
+    }
+ 
+    public double getPrice() {
+        return price;
+    }
+    
+    public void setPrice(double price) {
+        this.price = price;
+    }
+    
+    public abstract void accept(Visitor visitor);
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>具体元素：MedicineA.java</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>public class MedicineA extends Medicine{
+ 
+    public MedicineA(String name, double price) {
+        super(name, price);
+    }
+ 
+    public void accept(Visitor visitor) {
+        visitor.visitor(this);
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>具体元素：MedicineB.java</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>public class MedicineB extends Medicine{
+ 
+    public MedicineB(String name, double price) {
+        super(name, price);
+    }
+ 
+    public void accept(Visitor visitor) {
+        visitor.visitor(this);
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>药单：Presciption.java</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>public class Presciption {
+    List&lt;Medicine&gt; list = new ArrayList&lt;Medicine&gt;();
+    
+    public void accept(Visitor visitor){
+        Iterator&lt;Medicine&gt; iterator = list.iterator();
+        
+        while (iterator.hasNext()) {
+            iterator.next().accept(visitor);
+        }
+    }
+    
+    public void addMedicine(Medicine medicine){
+        list.add(medicine);
+    }
+    
+    public void removeMedicien(Medicine medicine){
+        list.remove(medicine);
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>客户端：Client.java</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>public class Client {
+    public static void main(String[] args) {
+        Medicine a = new MedicineA(&quot;板蓝根&quot;, 11.0);
+        Medicine b = new MedicineB(&quot;感康&quot;, 14.3);
+        
+        Presciption presciption = new Presciption();
+        presciption.addMedicine(a);
+        presciption.addMedicine(b);
+        
+        Visitor charger = new Charger();
+        charger.setName(&quot;张三&quot;);
+        
+        Visitor workerOfPharmacy = new WorkerOfPharmacy();
+        workerOfPharmacy.setName(&quot;李四&quot;);
+        
+        presciption.accept(charger);
+        System.out.println(&quot;-------------------------------------&quot;);
+        presciption.accept(workerOfPharmacy);
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><!--[--><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: huangxiangquan@163.com">huangxiangquan</span><!----><!--]--><!--]--></span></div></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/vuepress-starter/assets/app-ec3e5753.js" defer></script>
+  </body>
+</html>
