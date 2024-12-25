@@ -1,0 +1,1 @@
+import{_ as t,o as _,c as a,b as e,d as c}from"./app-999de8cb.js";const o={},r=e("h1",{id:"常用10种算法",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#常用10种算法","aria-hidden":"true"},"#"),c(" 常用10种算法")],-1),s=[r];function n(d,i){return _(),a("div",null,s)}const l=t(o,[["render",n],["__file","常用10种算法.html.vue"]]);export{l as default};

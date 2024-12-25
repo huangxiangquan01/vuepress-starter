@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.67">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="/favicon.ico"><title>状态模式 | VuePress ！</title><meta name="description" content="这是我的第一个 VuePress 站点">
+    <link rel="preload" href="/vuepress-starter/assets/style-9631a17f.css" as="style"><link rel="stylesheet" href="/vuepress-starter/assets/style-9631a17f.css">
+    <link rel="modulepreload" href="/vuepress-starter/assets/app-999de8cb.js"><link rel="modulepreload" href="/vuepress-starter/assets/状态模式.html-1d50687c.js"><link rel="modulepreload" href="/vuepress-starter/assets/状态模式.html-a7df6975.js"><link rel="prefetch" href="/vuepress-starter/assets/index.html-3e48afd3.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Docker-compose命令大全.html-93eb499d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Docker常用命令大全.html-f3e287e3.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Docker镜像构建.html-7d7e4c30.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-01-Kubernetes系统原理.html-9dccf374.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-03-Kubeadm搭建集群.html-a0f434da.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-04-Kubectl核心使用.html-b7221f79.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-05-Dashboard安装和使用.html-b4ef007e.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-06-Pod原理和详解.html-af85acb7.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-07-工作负载详情.html-efda3e84.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-08-服务介绍.html-ccd6b91c.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-09-Ingress.html-390ccaf5.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-10-Storage.html-6e04cf17.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-11-集群配置默认存储类.html-b26ea5f4.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-12-Configmap和Secret.html-90e577e4.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-13-HorizontalPodAutoscaler.html-8899a225.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-14-创建并部署WordPress.html-104e8204.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-15-部署中间件.html-47c1520e.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-16-Devops.html-2248dbdf.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-17-Istio基本介绍.html-adf5b5c0.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/字典树.html-e2c6ee6a.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/常用10种算法.html-5b8b9a70.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/排序算法.html-701197dc.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/AQS工具类.html-bca75b08.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Atomic和Unsafe.html-1c37fa28.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/CPU缓存一致性协议MESI.html-f077c1c5.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Collections.html-b8e8c729.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Executor线程池.html-ce612aa5.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Future_ForkJoin.html-fa843369.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Java内存模型.html-1c30a945.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Synchronized.html-ac25c50f.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/抽象队列同步器AQS.html-9d1d4326.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/操作系统底层的整体认识.html-9ac36108.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Java设计模式.html-7f13f31c.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/JVM内存模型.html-77ac90db.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/JVM对象创建和内存分配.html-4da68e3a.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/JVM类加载机制.html-d5eacc9b.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/垃圾收集器G1和ZGC.html-6331579d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/垃圾收集器ParNew和CMS.html-270444fe.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/中介者模式.html-adab21e6.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/命令模式.html-1320181f.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/备忘录模式.html-02606526.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/模板模式.html-3e94ee87.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/策略模式.html-3e7ccbc8.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/观察者模式.html-1ce60350.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/解释器模式.html-a12c04bf.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/访问者模式.html-8abb08b5.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/责任链模式.html-aac04461.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/迭代器模式.html-3e4eb5b7.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/单例模式.html-db73cadd.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/原型模式.html-460cbe27.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/工厂模式.html-350ff1b7.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/建造者模式.html-cb877207.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/抽象工厂模式.html-4ae2d885.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/享元模式.html-e45e53dd.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/代理模式.html-8e1b3a0e.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/外观模式.html-a69f5545.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/桥接模式.html-53c942e8.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/组合模式.html-d7b5c1c4.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/装饰器模式.html-4d7645dc.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/适配器模式.html-e84d0f15.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/404.html-f9875e7b.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/index.html-ed3383e4.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Docker-compose命令大全.html-2a0e4dba.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Docker常用命令大全.html-d79b09e2.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Docker镜像构建.html-9df2a948.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-01-Kubernetes系统原理.html-e458650d.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-03-Kubeadm搭建集群.html-725522cd.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-04-Kubectl核心使用.html-9f1e9afa.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-05-Dashboard安装和使用.html-839ddae0.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-06-Pod原理和详解.html-3e166721.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-07-工作负载详情.html-918c6c68.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-08-服务介绍.html-4aad69bb.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-09-Ingress.html-8740ccf8.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-10-Storage.html-c6314a04.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-11-集群配置默认存储类.html-abf0f6d3.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-12-Configmap和Secret.html-3e5046e2.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-13-HorizontalPodAutoscaler.html-7b61da35.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-14-创建并部署WordPress.html-e5acb658.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-15-部署中间件.html-e51d13e7.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-16-Devops.html-c98b659c.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/k8s-17-Istio基本介绍.html-f5e59953.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/字典树.html-2c7285a6.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/常用10种算法.html-17a1c49f.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/排序算法.html-95e4dbce.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/AQS工具类.html-77fb2478.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Atomic和Unsafe.html-06dfb1a4.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/CPU缓存一致性协议MESI.html-dcabccb4.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Collections.html-655c9984.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Executor线程池.html-0b5f0c4a.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Future_ForkJoin.html-c27a14af.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Java内存模型.html-3f3ce9c0.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Synchronized.html-c7bad751.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/抽象队列同步器AQS.html-54b969ae.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/操作系统底层的整体认识.html-7af80a08.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/Java设计模式.html-4585117b.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/JVM内存模型.html-a4e8e02a.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/JVM对象创建和内存分配.html-b3baf044.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/JVM类加载机制.html-47e18e2c.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/垃圾收集器G1和ZGC.html-370e712a.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/垃圾收集器ParNew和CMS.html-0b2a9e5f.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/中介者模式.html-88a3afb3.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/命令模式.html-0bace85b.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/备忘录模式.html-98b5d718.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/模板模式.html-a1a3122a.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/策略模式.html-544dd235.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/观察者模式.html-4b21f482.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/解释器模式.html-cdfb208c.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/访问者模式.html-2b7948bf.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/责任链模式.html-350335a1.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/迭代器模式.html-4f2e1555.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/单例模式.html-4e5f5e21.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/原型模式.html-3a79c02a.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/工厂模式.html-817019fa.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/建造者模式.html-76aa3e09.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/抽象工厂模式.html-f519b0c7.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/享元模式.html-a461053e.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/代理模式.html-7393c115.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/外观模式.html-99ee7d35.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/桥接模式.html-1eaaaca9.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/组合模式.html-d68ec25b.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/装饰器模式.html-dba31b7c.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/适配器模式.html-a07dfe6c.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/404.html-38d245cb.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/vuepress-starter/" class=""><!----><span class="site-name">VuePress ！</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="Java"><span class="title">Java</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="Java"><span class="title">Java</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/vuepress-starter/java/jvm/JVM内存模型.md" class="" aria-label="Jvm"><!--[--><!--]--> Jvm <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/vuepress-starter/java/arithmetic/字典树.md" class="" aria-label="数据结构与算法"><!--[--><!--]--> 数据结构与算法 <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/vuepress-starter/java/concurrent/操作系统底层的整体认识.md" class="" aria-label="并发编程"><!--[--><!--]--> 并发编程 <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><!--[--><h4 class="navbar-dropdown-subtitle"><a href="/vuepress-starter/java/design/Java设计模式.md" class="" aria-label="设计模式"><!--[--><!--]--> 设计模式 <!--[--><!--]--></a></h4><ul class="navbar-dropdown-subitem-wrapper"><!--[--><li class="navbar-dropdown-subitem"><a href="/vuepress-starter/java/design/build/单例模式.md" class="" aria-label="创建型模式"><!--[--><!--]--> 创建型模式 <!--[--><!--]--></a></li><li class="navbar-dropdown-subitem"><a href="/vuepress-starter/java/design/structure/享元模式.md" class="" aria-label="结构型模式"><!--[--><!--]--> 结构型模式 <!--[--><!--]--></a></li><li class="navbar-dropdown-subitem"><a href="/vuepress-starter/java/design/action/中介者模式.md" class="" aria-label="行为型模式"><!--[--><!--]--> 行为型模式 <!--[--><!--]--></a></li><!--]--></ul><!--]--></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="Devops"><span class="title">Devops</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="Devops"><span class="title">Devops</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/vuepress-starter/devops/docker/Docker常用命令大全.md" class="" aria-label="docker"><!--[--><!--]--> docker <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/vuepress-starter/devops/kubernetes/k8s-01-Kubernetes系统原理.md" class="" aria-label="kubernetes"><!--[--><!--]--> kubernetes <!--[--><!--]--></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><button class="toggle-color-mode-button" title="toggle color mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="Java"><span class="title">Java</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="Java"><span class="title">Java</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/vuepress-starter/java/jvm/JVM内存模型.md" class="" aria-label="Jvm"><!--[--><!--]--> Jvm <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/vuepress-starter/java/arithmetic/字典树.md" class="" aria-label="数据结构与算法"><!--[--><!--]--> 数据结构与算法 <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/vuepress-starter/java/concurrent/操作系统底层的整体认识.md" class="" aria-label="并发编程"><!--[--><!--]--> 并发编程 <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><!--[--><h4 class="navbar-dropdown-subtitle"><a href="/vuepress-starter/java/design/Java设计模式.md" class="" aria-label="设计模式"><!--[--><!--]--> 设计模式 <!--[--><!--]--></a></h4><ul class="navbar-dropdown-subitem-wrapper"><!--[--><li class="navbar-dropdown-subitem"><a href="/vuepress-starter/java/design/build/单例模式.md" class="" aria-label="创建型模式"><!--[--><!--]--> 创建型模式 <!--[--><!--]--></a></li><li class="navbar-dropdown-subitem"><a href="/vuepress-starter/java/design/structure/享元模式.md" class="" aria-label="结构型模式"><!--[--><!--]--> 结构型模式 <!--[--><!--]--></a></li><li class="navbar-dropdown-subitem"><a href="/vuepress-starter/java/design/action/中介者模式.md" class="" aria-label="行为型模式"><!--[--><!--]--> 行为型模式 <!--[--><!--]--></a></li><!--]--></ul><!--]--></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="Devops"><span class="title">Devops</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="Devops"><span class="title">Devops</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/vuepress-starter/devops/docker/Docker常用命令大全.md" class="" aria-label="docker"><!--[--><!--]--> docker <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/vuepress-starter/devops/kubernetes/k8s-01-Kubernetes系统原理.md" class="" aria-label="kubernetes"><!--[--><!--]--> kubernetes <!--[--><!--]--></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p tabindex="0" class="sidebar-item sidebar-heading active">行为型模式 <!----></p><ul style="" class="sidebar-item-children"><!--[--><li><a href="/vuepress-starter/java/design/action/%E4%B8%AD%E4%BB%8B%E8%80%85%E6%A8%A1%E5%BC%8F.html" class="sidebar-item" aria-label="中介者模式"><!--[--><!--]--> 中介者模式 <!--[--><!--]--></a><!----></li><li><a href="/vuepress-starter/java/design/action/%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F.html" class="sidebar-item" aria-label="命令模式"><!--[--><!--]--> 命令模式 <!--[--><!--]--></a><!----></li><li><a href="/vuepress-starter/java/design/action/%E5%A4%87%E5%BF%98%E5%BD%95%E6%A8%A1%E5%BC%8F.html" class="sidebar-item" aria-label="备忘录模式"><!--[--><!--]--> 备忘录模式 <!--[--><!--]--></a><!----></li><li><a href="/vuepress-starter/java/design/action/%E6%A8%A1%E6%9D%BF%E6%A8%A1%E5%BC%8F.html" class="sidebar-item" aria-label="模板模式"><!--[--><!--]--> 模板模式 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/vuepress-starter/java/design/action/%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8F.html" class="router-link-active router-link-exact-active router-link-active sidebar-item active" aria-label="状态模式"><!--[--><!--]--> 状态模式 <!--[--><!--]--></a><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/vuepress-starter/java/design/action/%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8F.html#一、什么是状态模式" class="router-link-active router-link-exact-active sidebar-item" aria-label="一、什么是状态模式"><!--[--><!--]--> 一、什么是状态模式 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/vuepress-starter/java/design/action/%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8F.html#二、结构图" class="router-link-active router-link-exact-active sidebar-item" aria-label="二、结构图"><!--[--><!--]--> 二、结构图 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/vuepress-starter/java/design/action/%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8F.html#三、代码实现" class="router-link-active router-link-exact-active sidebar-item" aria-label="三、代码实现"><!--[--><!--]--> 三、代码实现 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><a href="/vuepress-starter/java/design/action/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.html" class="sidebar-item" aria-label="策略模式"><!--[--><!--]--> 策略模式 <!--[--><!--]--></a><!----></li><li><a href="/vuepress-starter/java/design/action/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F.html" class="sidebar-item" aria-label="观察者模式"><!--[--><!--]--> 观察者模式 <!--[--><!--]--></a><!----></li><li><a href="/vuepress-starter/java/design/action/%E8%A7%A3%E9%87%8A%E5%99%A8%E6%A8%A1%E5%BC%8F.html" class="sidebar-item" aria-label="解释器模式"><!--[--><!--]--> 解释器模式 <!--[--><!--]--></a><!----></li><li><a href="/vuepress-starter/java/design/action/%E8%AE%BF%E9%97%AE%E8%80%85%E6%A8%A1%E5%BC%8F.html" class="sidebar-item" aria-label="访问者模式"><!--[--><!--]--> 访问者模式 <!--[--><!--]--></a><!----></li><li><a href="/vuepress-starter/java/design/action/%E8%B4%A3%E4%BB%BB%E9%93%BE%E6%A8%A1%E5%BC%8F.html" class="sidebar-item" aria-label="责任链模式"><!--[--><!--]--> 责任链模式 <!--[--><!--]--></a><!----></li><li><a href="/vuepress-starter/java/design/action/%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F.html" class="sidebar-item" aria-label="迭代器模式"><!--[--><!--]--> 迭代器模式 <!--[--><!--]--></a><!----></li><!--]--></ul></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><h1 id="状态模式" tabindex="-1"><a class="header-anchor" href="#状态模式" aria-hidden="true">#</a> 状态模式</h1><p><strong>背景：</strong></p><p>​ 介绍状态模式前，我们先看这样一个实例：公司力排万难终于获得某个酒店的系统开发项目，并且最终落到了你的头上。下图是他们系统的主要工作：</p><p>​ 当第一眼看到这个系统时你就看出这是一个状态图，每个框都代表了房间的状态，箭头表示房间状态的转换。分析如下：房间有三个状态：空闲、已预订、已入住，状态与状态之间可以根据客户的动作来进行转换，定义每个状态的值。</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>    public static final int FREEMTIME_STATE = 0;  //空闲状态
+    public static final int BOOKED_STATE = 1;     //已预订状态
+    public static final int CHECKIN_STATE = 2;    //入住状态
+ 
+    int state = FREEMTIME_STATE;     //初始状态
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><pre><code>通过客户的动作将每个状态整合起来，实现这个功能最简单的方式肯定是 if…else 啦！所以这里我们就通过动作将所有的状态全面整合起来。分析得这里有四个动作：预订、入住、退订、退房。如下：
+</code></pre><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>    /**
+     * @desc 预订
+     */
+    public void bookRoom(){
+        if(state == FREEMTIME_STATE){   //空闲可预订
+            if(count &gt; 0){
+                System.out.println(&quot;空闲房间，完成预订...&quot;);
+                state =  BOOKED_STATE;     //改变状态：已预订
+                count --;
+                //房间预订完了,提示客户没有房源了
+                if(count == 0){
+                    System.out.println(&quot;不好意思,房间已经预订完,欢迎您下次光临...&quot;);
+                }
+            }
+            else{
+                System.out.println(&quot;不好意思,已经没有房间了....&quot;);
+            }
+        }
+        else if(state == BOOKED_STATE){
+            System.out.println(&quot;该房间已经被预订了...&quot;);
+        }
+        else if(state == CHECKIN_STATE){
+            System.out.println(&quot;该房间已经有人入住了...&quot;);
+        }
+    }
+    
+    /**
+     * @desc 入住
+     */
+    public void checkInRoom(){
+        if(state == FREEMTIME_STATE){
+            if(count &gt; 0){
+                System.out.println(&quot;空闲房间，入住...&quot;);
+                state =  CHECKIN_STATE;     //改变状态：已预订
+                count --;
+                //房间预订完了,提示客户没有房源了
+                if(count == 0){
+                    System.out.println(&quot;不好意思,房间已经预订完,欢迎您下次光临...&quot;);
+                }
+            }
+            else{
+                System.out.println(&quot;不好意思,已经没有房间了....&quot;);
+            }
+            
+        }
+        else if(state == BOOKED_STATE){
+            if(&quot;如果该房间是您预订的&quot;){
+                System.out.println(&quot;入住....&quot;);
+                state = CHECKIN_STATE;
+            }
+            else{
+                System.out.println(&quot;您没有预订该房间,请先预订...&quot;);
+            }
+        }
+        else if(state == CHECKIN_STATE){
+            System.out.println(&quot;该房间已经入住了...&quot;);
+        }
+    }
+    
+    /**
+     * @desc 退订
+     */
+    public void unsubscribeRoom(){
+        if(state == FREEMTIME_STATE){}
+        else if(state == CHECKIN_STATE){}
+        else if(state == BOOKED_STATE){
+            System.out.println(&quot;已退订房间...&quot;);
+            state = FREEMTIME_STATE;
+            count ++;
+        }
+    }
+    
+    /**
+     * @desc 退房
+     */
+    public void checkOutRoom(){
+        if(state == FREEMTIME_STATE){}
+        else if(state == BOOKED_STATE){}
+        else if(state == CHECKIN_STATE){
+            System.out.println(&quot;已退房..&quot;);
+            state = FREEMTIME_STATE;
+            count++;
+        }
+    }
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>​ 正当你完成这个 “复杂” 的 if..else 时，客户增加需求说需要将某些房间保留下来以作为备用(standbyState)，于是悲剧了，因为你发现要在所有的操作里都要判断该房间是否为备用房间。当你老大经过你身边的时候发现你正在纠结怎么改的时候，你老大就问你为什么不换一个角度思考以状态为原子来改变它的行为，而不是通过行为来改变状态呢？于是你就学到了状态模式。</p><h2 id="一、什么是状态模式" tabindex="-1"><a class="header-anchor" href="#一、什么是状态模式" aria-hidden="true">#</a> 一、什么是状态模式</h2><p>​ 状态模式，就是允许对象在内部状态发生改变时改变它的行为，对象看起来就好像修改了它的类，也就是说以状态为原子来改变它的行为，而不是通过行为来改变状态。</p><p>​ 当对象的行为取决于它的属性时，我们称这些属性为状态，那该对象就称为状态对象。对于状态对象而言，它的行为依赖于它的状态，比如要预订房间，只有当该房间空闲时才能预订，想入住该房间也只有当你预订了该房间或者该房间为空闲时。对于这样的一个对象，当它的外部事件产生互动的时候，其内部状态就会发生变化，从而使得他的行为也随之发生变化。</p><h2 id="二、结构图" tabindex="-1"><a class="header-anchor" href="#二、结构图" aria-hidden="true">#</a> 二、结构图</h2><blockquote><ul><li>Context：环境类，可以包括一些内部状态</li><li>State：抽象状态类，定义了所有具体状态的共同接口，任何状态都需要实现这个接口，从而实现状态间的互相转换</li><li>ConcreteState：具体状态类，处理来自 Context 的请求，每一个 ConcreteState 都提供了它对自己请求的实现，所以，当 Context 改变状态时行为也会跟着改变</li></ul></blockquote><p>但是状态模式的缺点在于：</p><p>（1）需要在枚举状态之前需要确定状态种类</p><p>（2）会导致增加系统类和对象的个数。</p><p>（3）对 “开闭原则” 的支持并不友好，新增状态类需要修改那些负责状态转换的源代码，否则无法切换到新增状态；而且修改某个状态类的行为也需修改对应类的源代码。</p><p>所以状态模式适用于：代码中包含大量与对象状态有关的条件语句，以及对象的行为依赖于它的状态，并且可以根据它的状态改变而改变它的相关行为。</p><blockquote><p>策略模式和状态模式比较：策略模式和状态模式的结构几乎完全一致，但是它们的目的和本质完全不一样。策略模式是围绕可以互换的算法来创建业务的，而状态模式是通过改变对象内部的状态来帮助对象控制自己行为的。前者行为是彼此独立、可以相互替换的，后者行为是不可以相互替换的。</p></blockquote><h2 id="三、代码实现" tabindex="-1"><a class="header-anchor" href="#三、代码实现" aria-hidden="true">#</a> 三、代码实现</h2><p>首先是状态接口：State</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>public interface State {
+    /**
+     * @desc 预订房间
+     */
+    public void bookRoom();
+    
+    /**
+     * @desc 退订房间
+     */
+    public void unsubscribeRoom();
+    
+    /**
+     * @desc 入住
+     */
+    public void checkInRoom();
+    
+    /**
+     * @desc 退房
+     */
+    public void checkOutRoom();
+    
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>然后是房间类：</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>public class Room {
+    /*
+     * 房间的三个状态
+     */
+    State freeTimeState;    //空闲状态
+    State checkInState;     //入住状态
+    State bookedState;      //预订状态
+ 
+    State state ;  
+    
+    public Room(){
+        freeTimeState = new FreeTimeState(this);
+        checkInState = new CheckInState(this);
+        bookedState = new BookedState(this);
+        
+        state = freeTimeState ;  //初始状态为空闲
+    }
+    
+    /**
+     * @desc 预订房间
+     */
+    public void bookRoom(){
+        state.bookRoom();
+    }
+    
+    /**
+     * @desc 退订房间
+     */
+    public void unsubscribeRoom(){
+        state.unsubscribeRoom();
+    }
+    
+    /**
+     * @desc 入住
+     */
+    public void checkInRoom(){
+        state.checkInRoom();
+    }
+    
+    /**
+     * @desc 退房
+     */
+    public void checkOutRoom(){
+        state.checkOutRoom();
+    }
+ 
+    public String toString(){
+        return &quot;该房间的状态是:&quot;+getState().getClass().getName();
+    }
+    
+    /*
+     * getter和setter方法
+     */
+    public State getFreeTimeState() {
+        return freeTimeState;
+    }
+ 
+    public void setFreeTimeState(State freeTimeState) {
+        this.freeTimeState = freeTimeState;
+    }
+ 
+    public State getCheckInState() {
+        return checkInState;
+    }
+ 
+    public void setCheckInState(State checkInState) {
+        this.checkInState = checkInState;
+    }
+ 
+    public State getBookedState() {
+        return bookedState;
+    }
+ 
+    public void setBookedState(State bookedState) {
+        this.bookedState = bookedState;
+    }
+ 
+    public State getState() {
+        return state;
+    }
+ 
+    public void setState(State state) {
+        this.state = state;
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>然后是3个状态类,这个三个状态分别对于这:空闲、预订、入住。其中空闲可以完成预订和入住两个动作，预订可以完成入住和退订两个动作，入住可以退房。</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>/** 
+ * @Description: 空闲状态只能预订和入住
+ */
+public class FreeTimeState implements State {
+    
+    Room hotelManagement;
+    
+    public FreeTimeState(Room hotelManagement){
+        this.hotelManagement = hotelManagement;
+    }
+    
+    
+    public void bookRoom() {
+        System.out.println(&quot;您已经成功预订了...&quot;);
+        hotelManagement.setState(hotelManagement.getBookedState());   //状态变成已经预订
+    }
+ 
+    public void checkInRoom() {
+        System.out.println(&quot;您已经成功入住了...&quot;);
+        hotelManagement.setState(hotelManagement.getCheckInState());   //状态变成已经入住
+    }
+ 
+    public void checkOutRoom() {
+        //不需要做操作
+    }
+ 
+    public void unsubscribeRoom() {
+        //不需要做操作
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>/** 
+ * @Description: 入住状态房间只能退房
+ */
+public class BookedState implements State {
+    Room hotelManagement;
+    
+    public BookedState(Room hotelManagement) {
+        this.hotelManagement = hotelManagement;
+    }
+ 
+    public void bookRoom() {
+        System.out.println(&quot;该房间已近给预定了...&quot;);
+    }
+ 
+    public void checkInRoom() {
+        System.out.println(&quot;入住成功...&quot;); 
+        hotelManagement.setState(hotelManagement.getCheckInState());         //状态变成入住
+    }
+ 
+    public void checkOutRoom() {
+        //不需要做操作
+    }
+ 
+    public void unsubscribeRoom() {
+        System.out.println(&quot;退订成功,欢迎下次光临...&quot;);
+        hotelManagement.setState(hotelManagement.getFreeTimeState());   //变成空闲状态
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>/** 
+ * @Description: 入住可以退房
+ */
+public class CheckInState implements State {
+    Room hotelManagement;
+    public CheckInState(Room hotelManagement) {
+        this.hotelManagement = hotelManagement;
+    }
+ 
+    public void bookRoom() {
+        System.out.println(&quot;该房间已经入住了...&quot;);
+    }
+ 
+    public void checkInRoom() {
+        System.out.println(&quot;该房间已经入住了...&quot;);
+    }
+ 
+    public void checkOutRoom() {
+        System.out.println(&quot;退房成功....&quot;);
+        hotelManagement.setState(hotelManagement.getFreeTimeState());     //状态变成空闲
+    }
+ 
+    public void unsubscribeRoom() {
+        //不需要做操作
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>最后是测试类：</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>public class Test {
+    public static void main(String[] args) {
+        //有3间房
+        Room[] rooms = new Room[2];
+        //初始化
+        for(int i = 0 ; i &lt; rooms.length ; i++){
+            rooms[i] = new Room();
+        }
+        //第一间房
+        rooms[0].bookRoom();    //预订
+        rooms[0].checkInRoom();   //入住
+        rooms[0].bookRoom();    //预订
+        System.out.println(rooms[0]);
+        System.out.println(&quot;---------------------------&quot;);
+        
+        //第二间房
+        rooms[1].checkInRoom();
+        rooms[1].bookRoom();
+        rooms[1].checkOutRoom();
+        rooms[1].bookRoom();
+        System.out.println(rooms[1]);
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><!--[--><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: huangxiangquan@163.com">huangxiangquan</span><!----><!--]--><!--]--></span></div></footer><nav class="page-nav"><p class="inner"><span class="prev"><a href="/vuepress-starter/java/design/action/%E6%A8%A1%E6%9D%BF%E6%A8%A1%E5%BC%8F.html" class="" aria-label="模板模式"><!--[--><!--]--> 模板模式 <!--[--><!--]--></a></span><span class="next"><a href="/vuepress-starter/java/design/action/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.html" class="" aria-label="策略模式"><!--[--><!--]--> 策略模式 <!--[--><!--]--></a></span></p></nav><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/vuepress-starter/assets/app-999de8cb.js" defer></script>
+  </body>
+</html>
