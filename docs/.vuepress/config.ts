@@ -3,7 +3,7 @@ import {defaultTheme, defineUserConfig} from 'vuepress'
 export default defineUserConfig({
     base: '/vuepress-starter/',
     lang: 'zh-CN',
-    title: '你好， VuePress ！',
+    title: 'VuePress ！',
     description: '这是我的第一个 VuePress 站点',
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }]
@@ -83,8 +83,50 @@ export default defineUserConfig({
             '/java/design/': [
                 {
                     text: '设计模式',
+                    children: ['/java/design/Java设计模式.md',],
+                }
+            ],
+            '/java/design/build/': [
+                {
+                    text: '创建型模式',
                     children: [
-                        '/java/design/Java设计模式.md',],
+                        '/java/design/build/单例模式.md',
+                        '/java/design/build/原型模式.md',
+                        '/java/design/build/工厂模式.md',
+                        '/java/design/build/建造者模式.md',
+                        '/java/design/build/抽象工厂模式.md',],
+                }
+            ],
+            '/java/design/structure/': [
+                {
+                    text: '结构型模式',
+                    children: [
+                        '/java/design/structure/享元模式.md',
+                        '/java/design/structure/代理模式.md',
+                        '/java/design/structure/外观模式.md',
+                        '/java/design/structure/桥接模式.md',
+                        '/java/design/structure/组合模式.md',
+                        '/java/design/structure/装饰器模式.md',
+                        '/java/design/structure/适配器模式.md',],
+                }
+            ],
+            '/java/design/action/': [
+                {
+                    text: '行为型模式',
+                    children: [
+                        '/java/design/action/中介者模式.md',
+                        '/java/design/action/命令模式.md',
+                        '/java/design/action/备忘录模式.md',
+                        '/java/design/action/模板模式.md',
+                        '/java/design/action/状态模式.md',
+                        '/java/design/action/策略模式.md',
+                        '/java/design/action/观察者模式.md',
+                        '/java/design/action/解释器模式.md',
+                        '/java/design/action/访问者模式.md',
+                        '/java/design/action/责任链模式.md',
+                        '/java/design/action/迭代器模式.md',
+
+                    ],
                 }
             ],
         },
@@ -108,6 +150,20 @@ export default defineUserConfig({
                     {
                         text: '设计模式',
                         link: '/java/design/Java设计模式.md',
+                        children: [
+                            {
+                                text: '创建型模式',
+                                link: '/java/design/build/单例模式.md',
+                            },
+                            {
+                                text: '结构型模式',
+                                link: '/java/design/structure/享元模式.md',
+                            },
+                            {
+                                text: '行为型模式',
+                                link: '/java/design/action/中介者模式.md',
+                            },
+                        ]
                     }
                 ]
             },
